@@ -72,8 +72,9 @@ interface MainInteractor {
                         return Result.Nothing
                     }
 
-                    if (repository.isLeftPartEmpty())
+                    if (repository.isLeftPartEmpty()) {
                         return Result.Nothing
+                    }
 
                     if (!repository.isRightPartEmpty()) {
                         return Result.Nothing
